@@ -1,0 +1,15 @@
+// reset font size
+html, body {
+	font-size: 100%;
+}
+
+// better font rendering
+body, 
+button, 
+input,
+select, 
+label,
+textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;   
+}

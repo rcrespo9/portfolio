@@ -1,0 +1,9 @@
+/*------------------------------------*\
+    #Header Styles
+\*------------------------------------*/
+
+// navigation links
+.desktop-nav-link {
+	// @include type-scale(base);
+	@include transition(color .2s ease-in-out);
+}

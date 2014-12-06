@@ -1,0 +1,21 @@
+// variables
+@import 'helpers/variables';
+
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "compass-mixins/lib/_compass.scss";
+// endbower
+
+// typography
+@import 'typography/config';
+@import 'typography/functions';
+@import 'typography/typomatic';
+
+// base
+@import 'base/global';
+
+// layout
+@import 'layout/header';
+
+// sections
+@import 'sections/intro';
