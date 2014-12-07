@@ -3,13 +3,12 @@
 
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-@import "compass-mixins/lib/_compass.scss";
+@import "bourbon/dist/_bourbon.scss";
 // endbower
 
 // typography
 @import 'typography/config';
-@import 'typography/functions';
-@import 'typography/typomatic';
+@import 'typography/mixins';
 
 // base
 @import 'base/global';

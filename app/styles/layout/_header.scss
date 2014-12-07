@@ -7,13 +7,11 @@
 	font-family: $font-family-sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	@include type-scale(medium);
 	@include type-weight(bold);
 }
 
 .desktop-nav-link {
 	font-family: $font-family-sans-serif;
-	@include type-scale(base);
 	@include type-weight(regular);
 	@include transition(color .2s ease-in-out);
 }

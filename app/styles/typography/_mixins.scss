@@ -1,0 +1,9 @@
+/*------------------------------------*\
+    #Typography Mixins
+\*------------------------------------*/
+
+// A simple type-weight mixin
+// ex. @include type-weight(strong);
+@mixin type-weight($weight) {
+    font-weight: map-get($type-weight, $weight);
+}
