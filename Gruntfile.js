@@ -48,6 +48,10 @@ module.exports = function (grunt) {
       gruntfile: {
         files: ['Gruntfile.js']
       },
+      jade: {
+        files: ['<%= config.app %>/{,*/}*.jade'],
+        tasks: ['jade']
+      },      
       sass: {
         files: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
         tasks: ['sass:server', 'autoprefixer']
@@ -61,7 +65,7 @@ module.exports = function (grunt) {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
-          '<%= config.app %>/{,*/}*.html',
+          '.tmp/{,*/}*.html',
           '.tmp/styles/{,*/}*.css',
           '<%= config.app %>/images/{,*/}*'
         ]
@@ -149,6 +153,21 @@ module.exports = function (grunt) {
       }
     },
 
+    jade: {
+      dist: {
+        options: {
+          pretty: true
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= config.app %>',
+          dest: '.tmp',
+          src: '*.jade',
+          ext: '.html'
+        }]
+      }
+    },    
+
     // Compiles Sass to CSS and generates necessary files if requested
     sass: {
       options: {
@@ -224,7 +243,7 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= config.dist %>'
       },
-      html: '<%= config.app %>/index.html'
+      html: '.tmp/index.html'
     },
 
     // Performs rewrites based on rev and the useminPrepare configuration
@@ -278,7 +297,7 @@ module.exports = function (grunt) {
         },
         files: [{
           expand: true,
-          cwd: '<%= config.dist %>',
+          cwd: '.tmp',
           src: '{,*/}*.html',
           dest: '<%= config.dist %>'
         }]
@@ -365,6 +384,7 @@ module.exports = function (grunt) {
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
+        'jade',
         'sass:server',
         'copy:styles'
       ],
@@ -421,6 +441,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+    'jade',
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
