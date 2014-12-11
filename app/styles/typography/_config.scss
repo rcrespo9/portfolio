@@ -3,25 +3,26 @@
 \*------------------------------------*/
 
 $type-scale: (
-    tiny: 13px,
+    tiny: rem(13),
 
-    small: 16px,
+    small: rem(16),
 
-    base: 20px,
+    base: rem(20),
 
-    medium: 25px, 
+    medium: rem(25), 
 
-    large: 31px,
+    large: rem(31),
 
-    xlarge: 39px,
+    xlarge: rem(39),
 
-    xxlarge: 49px, 
+    xxlarge: rem(49) 
 );
 
 $type-weight: (
     thin: 200,
     light: 300,
     regular: 400,
+    medium: 500,
     semi: 600,
     bold: 700,
     black: 900

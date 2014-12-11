@@ -5,13 +5,18 @@
 // navigation links
 .navbar-brand {
 	font-family: $font-family-sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	@include type-weight(bold);
+	text-transform: lowercase;
+	@include type-scale(medium);
+	@include type-weight(medium);
+}
+
+.brand-name:first-of-type {
+	color: $gray;
+	margin-right: rem(-7);
 }
 
 .desktop-nav-link {
 	font-family: $font-family-sans-serif;
-	@include type-weight(regular);
+	@include type-scale(base);
 	@include transition(color .2s ease-in-out);
 }
