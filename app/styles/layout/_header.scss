@@ -4,15 +4,14 @@
 
 // navigation links
 .navbar-brand {
-	font-family: $font-family-sans-serif;
 	text-transform: lowercase;
+	@include type-weight(regular);
 	@include type-scale(medium);
-	@include type-weight(medium);
 }
 
 .brand-name:first-of-type {
 	color: $gray;
-	margin-right: rem(-7);
+	margin-right: rem(-6);
 }
 
 .desktop-nav-link {
