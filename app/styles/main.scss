@@ -1,9 +1,11 @@
 // variables
 @import 'helpers/variables';
+@import 'helpers/mixins';
 
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 @import "bourbon/dist/_bourbon.scss";
+@import "compass-mixins/lib/_compass.scss";
 // endbower
 
 // typography

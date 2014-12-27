@@ -2,8 +2,9 @@
     #Typography Mixins
 \*------------------------------------*/
 
-@mixin type-scale($size) {
-    font-size: map-get($type-scale, $size);
+@mixin type-scale($scale, $map: $type-scale) {
+  font-size: map-fetch($map, $scale font-size);
+  line-height: map-fetch($map, $scale base-lines);
 }
 
 @mixin type-weight($weight) {

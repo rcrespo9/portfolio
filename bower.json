@@ -4,6 +4,7 @@
   "dependencies": {
     "bootstrap-sass-official": "~3.2.0",
     "modernizr": "~2.8.2",
-    "bourbon": "~4.0.2"
+    "bourbon": "~4.0.2",
+    "compass-mixins": "https://github.com/Igosuki/compass-mixins.git#~1.0.2"
   }
 }
