@@ -5,7 +5,7 @@
 // colors
 $white: #fff;
 
-$black: #111;
+$black: #121212;
 
 $gray: #999;
 
@@ -16,10 +16,9 @@ $transparentBlack: rgba(0,0,0,0.1);
 \*------------------------------------*/
 
 // fonts
-$font-family-serif: 'lexia', Georgia, "Times New Roman", Times, serif; 
 $font-family-sans-serif: 'effra', Helvetica, Arial, sans-serif;
 
-$font-family-base: $font-family-serif; 
+$font-family-base: $font-family-sans-serif; 
 
 // navigation bar
 // Basics of a navbar
@@ -31,7 +30,7 @@ $navbar-default-border: $transparentBlack;
 
 // // Navbar links
 $navbar-default-link-color: $black;
-// $navbar-default-link-hover-color:          #333 !default;
+$navbar-default-link-hover-color: #1479DE;
 // $navbar-default-link-hover-bg:             transparent !default;
 // $navbar-default-link-active-color:         #555 !default;
 // $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;

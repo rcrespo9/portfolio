@@ -3,6 +3,11 @@
 \*------------------------------------*/
 
 // navigation links
+.navbar-brand, .desktop-nav-link {
+	text-transform: lowercase;
+	@include type-weight(regular);	
+}
+
 .navbar-brand {
 	font-size: rem(25);
 }
@@ -11,15 +16,13 @@
 	&:first-of-type {
 		margin-right: rem(-5);
 	}
-}
 
-.navbar-brand, .desktop-nav-link {
-	font-family: $font-family-sans-serif;
-	text-transform: lowercase;
-	@include type-weight(regular);	
+	&:last-of-type {
+		@include type-weight(light);
+	}
 }
 
 .desktop-nav-link {
 	font-size: rem(20);
-	@include transition(all .2s ease-in-out);
+	@include transition(color .2s ease-in-out);
 }
