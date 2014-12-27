@@ -18,6 +18,43 @@ $type-scale: (
     xxlarge: rem(49) 
 );
 
+// $type-scale: (
+//     tiny: (
+//         font-size: rem(13),
+//         base-lines: 0.5
+//     ),
+
+//     small: (
+//         font-size: rem(16),
+//         base-lines: 0.75
+//     ),
+
+//     base: (
+//         font-size: rem(20),
+//         base-lines: 1
+//     ),
+
+//     medium: (
+//         font-size: rem(25),
+//         base-lines: 1
+//     ),
+
+//     large: (
+//         font-size: rem(31),
+//         base-lines: 1
+//     ),
+
+//     xlarge: (
+//         font-size: rem(39),
+//         base-lines: 1.5
+//     ),
+
+//     xxlarge: (
+//         font-size: rem(49),
+//         base-lines: 2
+//     ),
+// );
+
 $type-weight: (
     thin: 200,
     light: 300,
