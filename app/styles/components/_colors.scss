@@ -1,13 +1,14 @@
 /*------------------------------------*\
-    #Background Styles
+    #Colors
 \*------------------------------------*/
 
+// background colors
 .clouds-bg {
 	background-color: $clouds;
 }
 
 .red-bg {
-	background-color: $pomegranate;
+	background-color: $alizarin;
 }
 
 .blue-bg {
@@ -16,4 +17,10 @@
 
 .navy-bg {
 	background-color: $wetAsphalt;
+}
+
+// text colors
+
+.white-text {
+	color: $white;
 }
