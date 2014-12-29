@@ -5,10 +5,17 @@
 // colors
 $white: #fff;
 
-$black: #121212;
+$gray: #323232;
 
-$gray: #999;
+$clouds: #ecf0f1;
 
+$pomegranate: #c0392b;
+
+$belizeHole: #2980b9;
+
+$wetAsphalt: #34495e;
+
+$transparent: transparent;
 $transparentBlack: rgba(0,0,0,0.1);
 
 /*------------------------------------*\
@@ -24,25 +31,21 @@ $font-family-base: $font-family-sans-serif;
 // Basics of a navbar
 $navbar-height: 80px;
 
-$navbar-default-color: $black;
+$navbar-default-color: $gray;
 $navbar-default-bg: $white;
-$navbar-default-border: $transparentBlack;
+$navbar-default-border: none;
 
 // // Navbar links
-$navbar-default-link-color: $black;
-$navbar-default-link-hover-color: #1479DE;
-// $navbar-default-link-hover-bg:             transparent !default;
-// $navbar-default-link-active-color:         #555 !default;
-// $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
-// $navbar-default-link-disabled-color:       #ccc !default;
-// $navbar-default-link-disabled-bg:          transparent !default;
+$navbar-default-link-color: $gray;
+$navbar-default-link-hover-color: $pomegranate;
+$navbar-default-link-active-color: $navbar-default-link-hover-color;
+$navbar-default-link-active-bg:  $transparent;
 
 $nav-link-padding: 10px 30px;
 
 // // Navbar brand label
-// $navbar-default-brand-color:               $navbar-default-link-color !default;
-// $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%) !default;
-// $navbar-default-brand-hover-bg:            transparent !default;
+$navbar-default-brand-color:  $navbar-default-link-color;
+$navbar-default-brand-hover-color: $navbar-default-brand-color;
 
 // // Navbar toggle
 // $navbar-default-toggle-hover-bg:           #ddd !default;

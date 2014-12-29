@@ -4,8 +4,8 @@
 
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-@import "bourbon/dist/_bourbon.scss";
 @import "compass-mixins/lib/_compass.scss";
+@import "bourbon/dist/_bourbon.scss";
 // endbower
 
 // typography
@@ -17,6 +17,10 @@
 
 // layout
 @import 'layout/header';
+@import 'layout/grid';
+
+// components
+@import 'components/backgrounds';
 
 // sections
 @import 'sections/intro';
