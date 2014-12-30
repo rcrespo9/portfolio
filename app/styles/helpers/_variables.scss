@@ -31,13 +31,12 @@ $font-family-sans-serif: 'effra', Helvetica, Arial, sans-serif;
 $font-family-base: $font-family-sans-serif; 
 
 // navigation bar
-// Basics of a navbar
 $navbar-height: 80px;
 
 $navbar-default-bg: $transparentWhite;
 $navbar-default-border: none;
 
-// // Navbar links
+// navbar links
 $navbar-default-link-color: $gray;
 $navbar-default-link-hover-color: $pomegranate;
 $navbar-default-link-active-color: $navbar-default-link-hover-color;
@@ -45,11 +44,11 @@ $navbar-default-link-active-bg:  $transparent;
 
 $nav-link-padding: 10px 30px;
 
-// // Navbar brand label
+// // navbar brand label
 $navbar-default-brand-color:  $navbar-default-link-color;
 $navbar-default-brand-hover-color: $navbar-default-brand-color;
 
-// // Navbar toggle
+// // navbar toggle
 // $navbar-default-toggle-hover-bg:           #ddd !default;
 // $navbar-default-toggle-icon-bar-bg:        #888 !default;
 // $navbar-default-toggle-border-color:       #ddd !default;

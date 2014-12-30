@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    #Base Typography
+\*------------------------------------*/
+
+h1, h2, h3, h4, h5 {
+	margin-top: 0;
+	margin-bottom: 0;
+	@include type-weight(medium);
+}
+
+h1 {
+	font-size: rem(49);
+}
+
+
+h2 {
+	font-size: rem(39);
+}
+
+p {
+	@include type-weight(regular);
+}
