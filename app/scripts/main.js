@@ -19,7 +19,7 @@ var anchorScroll = (function() {
 				var linkId = this.hash;
 				e.preventDefault();
 
-				$(linkId).velocity('scroll', { duration: 750, offset: -75});
+				$(linkId).velocity('scroll', { duration: 750, offset: -80});
 			});
 		}
 

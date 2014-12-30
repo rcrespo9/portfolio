@@ -6,7 +6,6 @@
 .navbar-brand, .desktop-nav-link {
 	text-transform: lowercase;
 	@include type-weight(regular);
-	@include transition(all .2s ease-in-out);	
 }
 
 .navbar-brand {
@@ -25,4 +24,5 @@
 
 .desktop-nav-link {
 	font-size: rem(20);
+	@include transition(all .2s ease-in-out);	
 }
