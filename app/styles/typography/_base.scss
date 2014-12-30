@@ -9,14 +9,26 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-	font-size: rem(49);
+	@include type-scale(xxlarge);
 }
 
 
 h2 {
-	font-size: rem(39);
+	@include type-scale(xlarge);
+}
+
+h3 {
+	@include type-scale(large);
+}
+
+h4 {
+	@include type-scale(medium);
 }
 
 p {
-	@include type-weight(regular);
+	@include type-scale(base);
+}
+
+small {
+	@include type-scale(small);
 }
