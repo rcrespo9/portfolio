@@ -5,7 +5,7 @@
 // colors
 $white: #fff;
 
-$gray: #353d44;
+$darkGray: #353d44;
 
 $clouds: #ecf0f1;
 
@@ -28,6 +28,9 @@ $transparentWhite: rgba(255,255,255,.95);
 // body
 $body-bg: $wetAsphalt;
 
+// text
+$text-color: $darkGray;
+
 // fonts
 $font-family-sans-serif: 'effra', Helvetica, Arial, sans-serif;
 
@@ -42,7 +45,7 @@ $navbar-default-bg: $transparentWhite;
 $navbar-default-border: none;
 
 // navbar links
-$navbar-default-link-color: $gray;
+$navbar-default-link-color: $darkGray;
 $navbar-default-link-hover-color: $pomegranate;
 $navbar-default-link-active-color: $navbar-default-link-hover-color;
 $navbar-default-link-active-bg:  $transparent;

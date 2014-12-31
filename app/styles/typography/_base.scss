@@ -32,3 +32,8 @@ p {
 small {
 	@include type-scale(small);
 }
+
+// header sections
+.header-section {
+	text-align: center;
+}
