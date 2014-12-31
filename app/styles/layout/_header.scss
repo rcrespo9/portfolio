@@ -13,13 +13,11 @@
 }
 
 .brand-name {
-	&:first-of-type {
-		margin-right: rem(-1);
-	}
 
 	&:last-of-type {
 		@include type-weight(light);
 	}
+	
 }
 
 .desktop-nav-link {
