@@ -6,6 +6,7 @@
     "modernizr": "~2.8.2",
     "compass-mixins": "https://github.com/Igosuki/compass-mixins.git#~1.0.2",
     "bourbon": "~4.0.2",
-    "velocity": "~1.1.0"
+    "velocity": "~1.1.0",
+    "animate.css-scss": "https://github.com/geoffgraham/animate.scss.git"
   }
 }

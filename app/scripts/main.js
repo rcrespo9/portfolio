@@ -30,5 +30,5 @@ var anchorScroll = (function() {
 
 
 $(function() {
-	anchorScroll.init();
+	anchorScroll.init();	
 });

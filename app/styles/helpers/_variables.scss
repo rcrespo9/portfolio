@@ -5,7 +5,7 @@
 // colors
 $white: #fff;
 
-$darkGray: #353d44;
+$darkGray: #333;
 
 $clouds: #ecf0f1;
 
@@ -15,18 +15,18 @@ $pomegranate: #c0392b;
 
 $belizeHole: #2980b9;
 
-$wetAsphalt: #34495e;
+$wetAsphalt: #ecf0f1;
+
+$greenSea: #16a085;
+
+$lynch: #6C7A89;
 
 $transparent: transparent;
 $transparentBlack: rgba(0,0,0,0.1);
-$transparentWhite: rgba(255,255,255,.95);
 
 /*------------------------------------*\
     #Bootstrap Overrides
 \*------------------------------------*/
-
-// body
-$body-bg: $wetAsphalt;
 
 // text
 $text-color: $darkGray;
@@ -41,12 +41,12 @@ $navbar-height: 80px;
 
 $navbar-margin-bottom: 0;
 
-$navbar-default-bg: $transparentWhite;
+$navbar-default-bg: $white;
 $navbar-default-border: none;
 
 // navbar links
 $navbar-default-link-color: $darkGray;
-$navbar-default-link-hover-color: $pomegranate;
+$navbar-default-link-hover-color: $greenSea;
 $navbar-default-link-active-color: $navbar-default-link-hover-color;
 $navbar-default-link-active-bg:  $transparent;
 
