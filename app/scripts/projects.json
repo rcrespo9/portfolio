@@ -5,7 +5,8 @@
 		"role": "Front end developer and web designer",
 		"description": "Crowded Lands visualizes the population density of every country in the world. Enter a country's name, and experience the visual representation of its population density per square mile.",
 		"professional": false,
-		"art_director": null
+		"art_director": null,
+		"image": "crowded-lands.png"
 	},
 	{
 		"id": 2,
@@ -13,7 +14,8 @@
 		"role": "Front end developer and web designer",
 		"description": "The Mirror Paradox reflects a user's willingness to put a price tag on their future.",
 		"professional": false,
-		"art_director": null
+		"art_director": null,
+		"image": "mirror-paradox.png"
 	},
 	{
 		"id": 3,
@@ -21,7 +23,8 @@
 		"role": "Full stack developer",
 		"description": "Live Discourse is a real-time chat application that promotes live, ongoing debate and conversation with readers all over the world. It is connected to a discussion meter which allows users to gauge the allure of an article based on the amount of messages exchanged.",
 		"professional": false,
-		"art_director": null
+		"art_director": null,
+		"image": "live-discourse.png"
 	},			
 	{
 		"id": 4,
@@ -29,6 +32,7 @@
 		"role": "Full stack developer",
 		"description": "Proton Playground has made the periodic table of the chemical elements fun again. Simply click on a chemical element, watch its protons come to life, and play with them.",
 		"professional": false,
-		"art_director": null
+		"art_director": null,
+		"image": "proton-playground.png"
 	}			
 ]

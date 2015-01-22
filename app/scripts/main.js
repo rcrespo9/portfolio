@@ -1,6 +1,8 @@
 'use strict';
 
-var anchorScroll = (function() {
+var app = app || {};
+
+app.anchorScroll = (function() {
 	var s;
 
 	return {
@@ -30,5 +32,5 @@ var anchorScroll = (function() {
 
 
 $(function() {
-	anchorScroll.init();	
+	app.anchorScroll.init();	
 });
