@@ -2,6 +2,8 @@
 
 var app = app || {};
 
+
+// scrollTo anchor scroll event
 app.anchorScroll = (function() {
 	var s;
 
@@ -26,10 +28,27 @@ app.anchorScroll = (function() {
 		}
 
 	};
-
-
 }());
 
+// projects template
+app.generateProjects = (function() {
+	var s;
+
+	return {
+		settings: {
+
+		},
+
+		init: function() {
+			s = this.settings;
+			this.createProjectsTemplate();
+		},
+
+		createProjectsTemplate: function() {
+
+		}
+	};
+}());
 
 $(function() {
 	app.anchorScroll.init();	
