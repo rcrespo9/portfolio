@@ -35,6 +35,11 @@ small {
 	@include type-scale(small);
 }
 
+// global settings
+.all-lowercase {
+	text-transform: lowercase;
+}
+
 // header sections
 .header-section {
 	text-align: center;

@@ -30,26 +30,30 @@ app.anchorScroll = (function() {
 	};
 }());
 
-// projects template
-app.generateProjects = (function() {
+// projects carousel
+app.projectsCarousel = (function() {
 	var s;
 
 	return {
 		settings: {
-
+			carousel: $('.projects-carousel')
 		},
 
 		init: function() {
 			s = this.settings;
-			this.createProjectsTemplate();
+			this.createCarousel();
 		},
 
-		createProjectsTemplate: function() {
-
+		createCarousel: function() {
+			s.carousel.slick({
+				draggable: false,
+				dots: true
+			});
 		}
 	};
 }());
 
 $(function() {
-	app.anchorScroll.init();	
+	app.anchorScroll.init();
+	app.projectsCarousel.init();	
 });
