@@ -5,16 +5,18 @@ section.white-bg#work
 				.header-section
 					h1.header-text Selected work
 
-		.row
-			.projects-carousel
-				each project in projects
-					.projects-slide(id="#{project.id}")
-						.col-md-5
-							figure.project-image
-								img.img-responsive(src='../images/' + project.image)
+		//- .row
+		//- 	.projects-carousel
+		//- 		each project in projects
+		//- 			.projects-slide(id="#{project.id}")
+		//- 				.col-md-5
+		//- 					figure.project-image
+		//- 						img.img-responsive(src='../images/' + project.image)
 
-						.col-md-6.col-md-offset-1
-							article.project-details
-								h2.project-name.all-lowercase= project.name
-								p.project-desc= project.description
-								a.project-link(href="#{project.link}") Visit Website					
+		//- 				.col-md-6.col-md-offset-1
+		//- 					article.project-details
+		//- 						h2.project-name.all-lowercase= project.name
+
+		//- 						p.project-desc= project.description
+								
+		//- 						a.project-link(href="#{project.link}") Visit Website					
