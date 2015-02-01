@@ -34,10 +34,12 @@ $transparentBlack: rgba(0,0,0,0.1);
 $text-color: $darkGray;
 
 // fonts
-$font-family-sans-serif: 'effra', Helvetica, Arial, sans-serif;
-$font-family-serif: 'ff-tisa-web-pro', Georgia, Times, serif;
+$font-family-sans-serif: 'futura-pt', Helvetica, Arial, sans-serif;
+$font-family-serif: 'dapifer', Georgia, Times, serif;
 
-$font-family-base: $font-family-sans-serif; 
+$font-family-base: $font-family-sans-serif;
+
+$headings-font-family: $font-family-serif; 
 
 // navigation bar
 $navbar-height: 80px;
@@ -46,6 +48,10 @@ $navbar-margin-bottom: 0;
 
 $navbar-default-bg: $white;
 $navbar-default-border: none;
+
+$grid-float-breakpoint:     -9999px;
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: -9999px;
 
 // navbar links
 $navbar-default-link-color: $darkGray;
@@ -56,10 +62,10 @@ $navbar-default-link-active-bg:  $transparent;
 $nav-link-padding: 10px 30px;
 
 // // navbar brand label
-$navbar-default-brand-color:  $navbar-default-link-color;
+$navbar-default-brand-color: $navbar-default-link-color;
 $navbar-default-brand-hover-color: $navbar-default-brand-color;
 
 // // navbar toggle
-// $navbar-default-toggle-hover-bg:           #ddd !default;
+$navbar-default-toggle-hover-bg: $transparent;
 // $navbar-default-toggle-icon-bar-bg:        #888 !default;
-// $navbar-default-toggle-border-color:       #ddd !default;
+$navbar-default-toggle-border-color: $transparent;

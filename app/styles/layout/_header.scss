@@ -5,15 +5,20 @@
 // navigation links
 .navbar-brand, .desktop-nav-link {
 	text-transform: lowercase;
-	@include type-weight(regular);
+	// @include type-weight(medium);
 }
 
 .navbar-brand {
+	font-family: $font-family-serif;
 	font-size: rem(25);
 
 	&:hover {
 		@include bounce;
 	}
+}
+
+.brand-name:first-child {
+	@include type-weight(medium);
 }
 
 .desktop-nav-link {
