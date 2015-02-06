@@ -2,14 +2,11 @@
     #Header Styles
 \*------------------------------------*/
 
-// navigation links
-.navbar-brand, .desktop-nav-link {
+.navbar-brand, .nav-link {
 	text-transform: lowercase;
-	// @include type-weight(medium);
 }
 
 .navbar-brand {
-	font-family: $font-family-serif;
 	font-size: rem(25);
 
 	&:hover {
@@ -17,12 +14,38 @@
 	}
 }
 
-.brand-name:first-child {
-	@include type-weight(medium);
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: $transWetAsphalt;
+	z-index: 99999;
 }
 
-.desktop-nav-link {
-	font-size: rem(20);
-	@include transition(all .2s ease-in-out);	
+.overlay-nav {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	@include transform(translateY(-50%));	
 }
 
+.nav-item {
+	display: inline-block;
+	padding: 0 40px;
+}
+
+.nav-link {
+	color: $white;
+	font-family: $font-family-serif;
+	font-size: rem(49);	
+
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
