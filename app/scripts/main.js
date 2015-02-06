@@ -59,7 +59,8 @@ app.navigation = (function() {
 	return {
 		settings: {
 			navButton: $('.navbar-toggle, .anchor-link'),
-			navOverlay: $('.overlay')
+			navOverlay: $('.overlay'),
+			theBody: $('body')
 		},
 
 		init: function() {
@@ -74,9 +75,11 @@ app.navigation = (function() {
 				e.preventDefault();
 
 				if(s.navOverlay.is(':visible')) {
-					s.navOverlay.velocity('fadeOut', { duration: speed });			
+					s.navOverlay.velocity('fadeOut', { duration: speed });
+					s.theBody.removeClass('no-scroll');		
 				} else {
 					s.navOverlay.velocity('fadeIn', { duration: speed });
+					s.theBody.addClass('no-scroll');
 				}
 
 			});

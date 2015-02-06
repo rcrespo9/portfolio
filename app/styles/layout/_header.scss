@@ -2,6 +2,7 @@
     #Header Styles
 \*------------------------------------*/
 
+// nav logo
 .navbar-brand, .nav-link {
 	text-transform: lowercase;
 }
@@ -14,6 +15,7 @@
 	}
 }
 
+// nav overlay
 .overlay {
 	display: none;
 	position: fixed;
@@ -35,6 +37,10 @@
 	@include transform(translateY(-50%));	
 }
 
+.main-menu {
+	margin-bottom: 0;
+}
+
 .nav-item {
 	display: inline-block;
 	padding: 0 40px;
@@ -46,6 +52,11 @@
 	font-size: rem(49);	
 
 	&:hover, &:focus {
+		color: $white;
 		text-decoration: none;
+	}
+
+	&:hover, &.active {
+		border-bottom: 3px solid lighten($wetAsphalt, 75%);
 	}
 }
