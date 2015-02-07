@@ -56,7 +56,7 @@
 
 .nav-item {
 	display: inline-block;
-	padding: 0 40px;
+	padding: 0 50px;
 }
 
 .nav-link {
@@ -70,7 +70,7 @@
 		text-decoration: none;
 	}
 
-	&:hover, &.active {
-		border-bottom: 3px solid lighten($wetAsphalt, 85%);
-	}
+	// &:hover {
+	// 	border-bottom: 3px solid lighten($wetAsphalt, 85%);
+	// }
 }
