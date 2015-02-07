@@ -2,17 +2,30 @@
     #Header Styles
 \*------------------------------------*/
 
-// nav logo
-.navbar-brand, .nav-link {
-	text-transform: lowercase;
+// nav logo and hamburger
+.icon-bar, .navbar-brand {
+	@include transition(all .2s ease-in-out);	
 }
 
 .navbar-brand {
 	font-size: rem(25);
+}
+
+.navbar-toggle {
+
+	margin-top: 25px;
+	margin-bottom: 21px;
+
+	.icon-bar {
+		width: 24px;
+	}
 
 	&:hover {
-		@include bounce;
+		.icon-bar {
+			background-color: $greenSea;
+		}
 	}
+
 }
 
 // nav overlay
@@ -49,7 +62,8 @@
 .nav-link {
 	color: $white;
 	font-family: $font-family-serif;
-	font-size: rem(49);	
+	font-size: rem(49);
+	text-transform: lowercase;	
 
 	&:hover, &:focus {
 		color: $white;
@@ -57,6 +71,6 @@
 	}
 
 	&:hover, &.active {
-		border-bottom: 3px solid lighten($wetAsphalt, 75%);
+		border-bottom: 3px solid lighten($wetAsphalt, 85%);
 	}
 }

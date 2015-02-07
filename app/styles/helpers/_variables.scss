@@ -54,19 +54,11 @@ $grid-float-breakpoint:     -9999px;
 //** Point at which the navbar begins collapsing.
 $grid-float-breakpoint-max: -9999px;
 
-// navbar links
-$navbar-default-link-color: $darkGray;
-$navbar-default-link-hover-color: $greenSea;
-$navbar-default-link-active-color: $navbar-default-link-hover-color;
-$navbar-default-link-active-bg:  $transparent;
-
-$nav-link-padding: 10px 30px;
-
 // // navbar brand label
-$navbar-default-brand-color: $navbar-default-link-color;
-$navbar-default-brand-hover-color: $navbar-default-brand-color;
+$navbar-default-brand-color: $text-color;
+$navbar-default-brand-hover-color: $greenSea;
 
 // // navbar toggle
 $navbar-default-toggle-hover-bg: $transparent;
-// $navbar-default-toggle-icon-bar-bg:        #888 !default;
+$navbar-default-toggle-icon-bar-bg: $navbar-default-brand-color;
 $navbar-default-toggle-border-color: $transparent;
