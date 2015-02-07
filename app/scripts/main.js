@@ -58,7 +58,7 @@ app.navigation = (function() {
 
 	return {
 		settings: {
-			navButton: $('.navbar-toggle, .anchor-link'),
+			navButton: $('.navbar-toggle, .nav-link'),
 			navOverlay: $('.overlay'),
 			theBody: $('body')
 		},

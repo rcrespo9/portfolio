@@ -35,11 +35,6 @@ small {
 	@include type-scale(small);
 }
 
-// global settings
-.all-lowercase {
-	text-transform: lowercase;
-}
-
 // header sections
 .intro-header-section,
 .header-section {
@@ -50,6 +45,6 @@ small {
 	margin-bottom: rem(60);
 }
 
-.header-text {
-	text-transform: lowercase;
-}
+// .header-text {
+// 	text-transform: lowercase;
+// }
