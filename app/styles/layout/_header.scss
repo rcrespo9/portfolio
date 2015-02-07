@@ -70,7 +70,7 @@
 		text-decoration: none;
 	}
 
-	// &:hover {
-	// 	border-bottom: 3px solid lighten($wetAsphalt, 85%);
-	// }
+	&:hover {
+		border-bottom: 3px solid lighten($wetAsphalt, 85%);
+	}
 }

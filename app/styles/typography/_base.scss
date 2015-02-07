@@ -27,7 +27,8 @@ h4 {
 }
 
 p {
-	@include type-scale(base);
+	margin-bottom: rem(20);
+	@include type-scale(medium);
 	@include type-weight(regular);
 }
 
@@ -42,7 +43,7 @@ small {
 }
 
 .header-section {
-	margin-bottom: rem(60);
+	margin-bottom: rem(30);
 }
 
 // .header-text {
