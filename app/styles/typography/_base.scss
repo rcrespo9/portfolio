@@ -27,8 +27,7 @@ h4 {
 }
 
 p {
-	margin-bottom: rem(20);
-	@include type-scale(medium);
+	@include type-scale(base);
 	@include type-weight(regular);
 }
 
@@ -36,16 +35,20 @@ small {
 	@include type-scale(small);
 }
 
-// header sections
-.intro-header-section,
-.header-section {
+// typography classes
+.intro-header {
 	text-align: left;
 }
 
-.header-section {
+.section-header {
 	margin-bottom: rem(30);
+	text-align: center;
 }
 
-// .header-text {
-// 	text-transform: lowercase;
-// }
+.section-subtitle, .section-copy {
+	margin-bottom: rem(20);
+}
+
+.section-subtitle {
+	font-family: $font-family-sans-serif;
+}
