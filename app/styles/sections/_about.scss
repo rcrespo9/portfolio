@@ -3,8 +3,11 @@
 \*------------------------------------*/
 
 // biography
-.portfolio-copy {
+.about-copy {
+	max-width: rem(555);
+
 	&:last-child {
 		margin-bottom: 0;
 	}
+
 }
