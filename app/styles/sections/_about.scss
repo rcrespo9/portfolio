@@ -13,6 +13,15 @@
 }
 
 // skills
-.skills-icon:nth-child(-n+4) {
-	margin-bottom: rem(20);
+.skills-icon {
+
+	&:nth-child(-n+4) {
+		margin-bottom: rem(20);	
+	}
+
+}
+
+.skills-img {
+	max-width: 95px;
+	height: auto;
 }

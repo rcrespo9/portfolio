@@ -36,12 +36,12 @@ small {
 }
 
 // typography classes
-.intro-header {
+.intro-header, 
+.section-header {
 	text-align: left;
 }
 
 .section-header {
-	text-align: center;
 	margin-bottom: rem(60);
 }
 
