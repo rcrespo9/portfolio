@@ -5,7 +5,6 @@
 h1, h2, h3, h4, h5 {
 	margin-top: 0;
 	margin-bottom: 0;
-	@include type-weight(regular);
 	@include transition(all .2s ease-in-out);
 }
 
@@ -36,13 +35,17 @@ small {
 }
 
 // typography classes
-.intro-header, 
-.section-header {
+.intro-header, .section-header {
 	text-align: left;
 }
 
+.intro-header {
+	@include type-weight(regular);
+}
+
 .section-header {
-	margin-bottom: rem(60);
+	margin-bottom: rem(40);
+	@include type-weight(bold);
 }
 
 .section-subtitle, .section-copy {
@@ -51,4 +54,5 @@ small {
 
 .section-subtitle {
 	font-family: $font-family-sans-serif;
+	@include type-weight(medium);
 }

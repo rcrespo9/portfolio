@@ -2,16 +2,6 @@
 	"projects":[
 		{
 			"id": 1,
-			"name": "Crowded Lands",
-			"role": "Front end developer and web designer",
-			"description": "Crowded Lands visualizes the population density of every country in the world. Enter a country's name, and experience the visual representation of its population density per square mile.",
-			"professional": false,
-			"art_director": null,
-			"link": "http://crowded-lands.herokuapp.com",
-			"image": "crowded-lands.png"
-		},
-		{
-			"id": 2,
 			"name": "The Mirror Paradox",
 			"role": "Front end developer and web designer",
 			"description": "The Mirror Paradox reflects a user's willingness to put a price tag on their future.",
@@ -21,7 +11,7 @@
 			"image": "mirror-paradox.png"
 		},
 		{
-			"id": 3,
+			"id": 2,
 			"name": "Live Discourse",
 			"role": "Full stack developer",
 			"description": "Live Discourse is a real-time chat application that promotes live, ongoing debate and conversation with readers all over the world. It is connected to a discussion meter which allows users to gauge the allure of an article based on the amount of messages exchanged.",
@@ -31,7 +21,7 @@
 			"image": "live-discourse.png"
 		},			
 		{
-			"id": 4,
+			"id": 3,
 			"name": "Proton Playground",
 			"role": "Full stack developer",
 			"description": "Proton Playground has made the periodic table of the chemical elements fun again. Simply click on a chemical element, watch its protons come to life, and play with them.",

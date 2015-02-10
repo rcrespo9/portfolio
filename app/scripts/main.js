@@ -2,7 +2,6 @@
 
 var app = app || {};
 
-
 // scrollTo anchor scroll event
 app.anchorScroll = (function() {
 	var s;
@@ -53,6 +52,7 @@ app.projectsCarousel = (function() {
 	};
 }());
 
+// navigation overlay
 app.navigation = (function() {
 	var s;
 
@@ -88,8 +88,33 @@ app.navigation = (function() {
 	};
 }());
 
+// greeting
+app.greeting = (function() {
+	return {
+		init: function() {
+			this.insertGreeting();
+		},
+
+		insertGreeting: function() {
+			var $introGreeting = $('#intro-greeting');
+			var today = new Date();
+			var hrs = today.getHours();
+
+			if(hrs <= 12) {
+				$introGreeting.text('Good Morning.');
+			} else if(hrs <= 18) {
+				$introGreeting.text('Good Afternoon.');
+			} else {
+				$introGreeting.text('Good Evening.');
+			}
+		}
+	};
+}());
+
+// initalize everything
 $(function() {
 	app.anchorScroll.init();
 	app.projectsCarousel.init();
-	app.navigation.init();	
+	app.navigation.init();
+	app.greeting.init();	
 });
