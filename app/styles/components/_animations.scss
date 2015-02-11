@@ -19,8 +19,7 @@
   from {
     @include transform(translateX(0));
     opacity: 1;
-    pointer-events: auto; 
-    pointer-events: none;    
+    pointer-events: auto;  
   }
   to {
     @include transform(translateX(40px));

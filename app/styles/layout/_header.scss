@@ -32,7 +32,7 @@
     #Overlay Styles
 \*------------------------------------*/
 
-// nav overlay and animations
+// outer nav overlay and animations
 .overlay, .dark-overlay {
 	position: fixed;
 	top: 0;
@@ -60,17 +60,6 @@
 		@include transform(skewX(-6deg));		
 	}
 
-	&.active-overlay {
-		pointer-events: auto;
-		@include animation(slideMenu .4s ease-in-out);
-		@include animation-fill-mode(both);
-	}
-
-	&.inactive-overlay {
-		@include animation(slideMenuOut .4s ease-in-out);
-		@include animation-fill-mode(both);
-	}
-
 }
 
 .dark-overlay {
@@ -79,14 +68,6 @@
 	width: 100%;
 	z-index: 1090;
 	@include transition(opacity .2s linear);
-
-	&.active-overlay {
-		pointer-events: auto;
-	}
-
-	&.inactive-overlay {
-		@include transition-delay(.6s);
-	}
 }
 
 .nav-item {
@@ -97,21 +78,42 @@
 
 .active-overlay {
 	opacity: 1;
-	.nav-item {
-		@include animation(slideMenu .4s ease-in-out);	
-		@include animation-fill-mode(both);
 
+	&.overlay, &.inactive-overlay {
+		@include animation-fill-mode(both);	
+	}
+
+	&.overlay, &.dark-overlay {
+		pointer-events: auto;
+	}
+
+	&.overlay, .nav-item {
+		@include animation(slideMenu .4s ease-in-out);	
+	}
+
+	.nav-item {
+		@include animation-fill-mode(both);	
 		@for $item from 1 through 4{
 	
 		  &:nth-child(#{$item}){ 
 		    @include animation-delay(#{$item / 10}s); 
 		  }
-		}
-
+		}		
 	}
 }
 
-// menu overlay styles
+.inactive-overlay {
+	&.overlay {
+		@include animation(slideMenuOut .4s ease-in-out);
+		@include animation-fill-mode(both);	
+	}
+
+	&.dark-overlay {
+		@include transition-delay(.6s);
+	}
+}
+
+// inner nav overlay styles
 .overlay-nav {
 	position: absolute;
 	top: 50%;
@@ -126,7 +128,7 @@
 }
 
 .nav-link {
-	color: #7f8c8d;
+	color: $absestos;
 	font-size: rem(49);
 	@include transition(all .2s ease-in-out);
 
