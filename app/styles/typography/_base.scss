@@ -34,18 +34,22 @@ small {
 	@include type-scale(small);
 }
 
+strong {
+	@include type-weight(medium);
+}
+
 // typography classes
-.intro-header, .section-header {
+.intro-text, .section-header {
 	text-align: left;
 }
 
-.intro-header {
-	@include type-weight(regular);
+.section-header {
+	margin-bottom: rem(32);
+	@include type-weight(bold);
 }
 
-.section-header {
-	margin-bottom: rem(40);
-	@include type-weight(bold);
+.intro-text {
+	@include type-weight(regular);
 }
 
 .section-subtitle, .section-copy {

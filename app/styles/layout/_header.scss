@@ -29,24 +29,45 @@
 }
 
 // nav overlay
-.overlay {
-	display: none;
+.overlay, .dark-overlay {
 	position: fixed;
+	display: none;
 	top: 0;
-	left: 0;
 	right: 0;
 	bottom: 0;
+	height: 100%;	
+}
+
+.overlay {
+	width: 30%;
+	background: $white;
+	z-index: 2000;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -50px;
+		width: 130px;
+		height: 100%;
+		background: $white;
+		@include transform(skewX(-6deg));		
+	}
+}
+
+.dark-overlay {
+	background: $transparentBlack;
+	left: 0;
 	width: 100%;
-	height: 100%;
-	background: $transWetAsphalt;
-	z-index: 99999;
+	z-index: 1070;
 }
 
 .overlay-nav {
 	position: absolute;
 	top: 50%;
 	width: 100%;
-	text-align: center;
+	text-align: right;
+	padding: 0 70px;
 	@include transform(translateY(-50%));	
 }
 
@@ -55,21 +76,16 @@
 }
 
 .nav-item {
-	display: inline-block;
-	padding: 0 50px;
+	margin-bottom: 13px;
 }
 
 .nav-link {
-	color: $white;
+	color: #7f8c8d;
 	font-size: rem(49);
-	text-transform: lowercase;	
+	@include transition(all .2s ease-in-out);
 
 	&:hover, &:focus {
-		color: $white;
+		color: $greenSea;
 		text-decoration: none;
-	}
-
-	&:hover {
-		border-bottom: 3px solid lighten($wetAsphalt, 85%);
 	}
 }
