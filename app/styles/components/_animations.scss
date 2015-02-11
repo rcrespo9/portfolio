@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    #Animations
+\*------------------------------------*/
+
+@include keyframes(slideMenu) {
+  from {
+    @include transform(translateX(40px));
+    opacity: 0;
+    pointer-events: none;    
+  }
+  to {
+    @include transform(translateX(0));
+    opacity: 1;
+    pointer-events: auto;    
+  }
+}
+
+@include keyframes(slideMenuOut) {
+  from {
+    @include transform(translateX(0));
+    opacity: 1;
+    pointer-events: auto; 
+    pointer-events: none;    
+  }
+  to {
+    @include transform(translateX(40px));
+    opacity: 0;
+    pointer-events: none;    
+  }
+}

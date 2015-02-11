@@ -3,6 +3,6 @@
 		ul.main-menu.list-unstyled
 			each menuItem in menuItems
 				li.nav-item
-					a.anchor-link.nav-link(href="#{menuItem.link}")= menuItem.name
+					a.anchor-link.nav-link.nav-trigger(href="#{menuItem.link}")= menuItem.name
 
-.dark-overlay
+.dark-overlay.nav-trigger

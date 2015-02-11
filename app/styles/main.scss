@@ -10,6 +10,10 @@
 @import "animate.css-scss/animate.scss";
 // endbower
 
+// components
+@import 'components/colors';
+@import 'components/animations';
+
 // typography
 @import 'typography/config';
 @import 'typography/mixins';
@@ -21,9 +25,6 @@
 // layout
 @import 'layout/header';
 @import 'layout/grid';
-
-// components
-@import 'components/colors';
 
 // sections
 @import 'sections/intro';

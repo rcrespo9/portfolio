@@ -58,12 +58,14 @@ app.navigation = (function() {
 
 	return {
 		settings: {
-			navButton: $('.navbar-toggle, .nav-link, .dark-overlay'),
+			navTrigger: $('.nav-trigger'),
 			navLink: $('.nav-link'),
-			navOverlay: $('.overlay, .dark-overlay'),
+			overlays: $('.overlay, .dark-overlay'),
 			theBody: $('body'),
 			activeClass: 'active-overlay',
-			noScroll: 'no-scroll'
+			inactiveClass: 'inactive-overlay',
+			noScroll: 'no-scroll',
+			animationEnd:'webkitAnimationEnd oanimationend msAnimationEnd animationend'
 		},
 
 		init: function() {
@@ -72,23 +74,22 @@ app.navigation = (function() {
 		},
 
 		navEvents: function() {
-			s.navButton.on('click', function(e) {
-
-				var animateLinks = function() {
-					s.navLink.each(function() {
-						$(this).addClass('animated fadeInLeft');
-					});
-				};
+			s.navTrigger.on('click', function(e) {
 
 				e.preventDefault();
 
-				if(s.navOverlay.hasClass(s.activeClass)) {
+				if(s.overlays.hasClass(s.activeClass)) {
 					s.theBody.removeClass(s.noScroll);
-					s.navOverlay.removeClass(s.activeClass);		
+					s.overlays.removeClass(s.activeClass);
+
+					s.overlays.addClass(s.inactiveClass);
+					
+					s.overlays.on(s.animationEnd, function() {
+						s.overlays.removeClass(s.inactiveClass);
+					});
 				} else {
 					s.theBody.addClass(s.noScroll);
-					s.navOverlay.addClass(s.activeClass);
-					animateLinks();	
+					s.overlays.addClass(s.activeClass);
 				}
 
 			});

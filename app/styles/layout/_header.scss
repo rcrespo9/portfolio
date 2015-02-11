@@ -32,20 +32,22 @@
     #Overlay Styles
 \*------------------------------------*/
 
-// nav overlay
+// nav overlay and animations
 .overlay, .dark-overlay {
 	position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	height: 100%;
-	opacity: 0;	
+	opacity: 0;
+	pointer-events: none;
 }
 
 .overlay {
 	width: 30%;
 	background: $white;
-	@include transition(opacity .2s ease-in-out);
+	z-index: 2000;
+	@include transition(all .2s ease-in-out);
 
 	&:before {
 		content: "";
@@ -59,27 +61,57 @@
 	}
 
 	&.active-overlay {
-		z-index: 2000;
+		pointer-events: auto;
+		@include animation(slideMenu .4s ease-in-out);
+		@include animation-fill-mode(both);
 	}
+
+	&.inactive-overlay {
+		@include animation(slideMenuOut .4s ease-in-out);
+		@include animation-fill-mode(both);
+	}
+
 }
 
 .dark-overlay {
 	background: $transparentBlack;
 	left: 0;
 	width: 100%;
+	z-index: 1090;
 	@include transition(opacity .2s linear);
 
 	&.active-overlay {
-		z-index: 1070;
 		pointer-events: auto;
 	}
+
+	&.inactive-overlay {
+		@include transition-delay(.6s);
+	}
+}
+
+.nav-item {
+	margin-bottom: 13px;
+	opacity: 0;
+	@include transition(all .2s linear);
 }
 
 .active-overlay {
 	opacity: 1;
+	.nav-item {
+		@include animation(slideMenu .4s ease-in-out);	
+		@include animation-fill-mode(both);
+
+		@for $item from 1 through 4{
+	
+		  &:nth-child(#{$item}){ 
+		    @include animation-delay(#{$item / 10}s); 
+		  }
+		}
+
+	}
 }
 
-// meny overlay styles
+// menu overlay styles
 .overlay-nav {
 	position: absolute;
 	top: 50%;
@@ -93,10 +125,6 @@
 	margin-bottom: 0;
 }
 
-.nav-item {
-	margin-bottom: 13px;
-}
-
 .nav-link {
 	color: #7f8c8d;
 	font-size: rem(49);
@@ -106,4 +134,6 @@
 		color: $greenSea;
 		text-decoration: none;
 	}
+	
 }
+
