@@ -1,16 +1,8 @@
 .overlay
 	nav.overlay-nav(role="navigation")
 		ul.main-menu.list-unstyled
-			li.nav-item
-				a.anchor-link.nav-link(href="#intro") Hello
+			each menuItem in menuItems
+				li.nav-item
+					a.anchor-link.nav-link(href="#{menuItem.link}")= menuItem.name
 
-			li.nav-item
-				a.anchor-link.nav-link(href="#work") Work
-
-			li.nav-item
-				a.anchor-link.nav-link(href="#about") Profile
-				
-			li.nav-item
-				a.anchor-link.nav-link(href="#contact") Contact
-
-.dark-overlay				
+.dark-overlay

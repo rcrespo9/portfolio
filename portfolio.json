@@ -81,5 +81,31 @@
 			"svg": "mongo-icon.svg",
 			"png": "mongo-icon.png"
 		}														
+	],
+
+	"menuItems": [
+		{
+			"id": 1,
+			"name": "Hello",
+			"link": "#intro"
+		},
+
+		{
+			"id": 2,
+			"name": "Work",
+			"link": "#work"
+		},
+
+		{
+			"id": 3,
+			"name": "Profile",
+			"link": "#about"
+		},
+
+		{
+			"id": 4,
+			"name": "Contact",
+			"link": "#contact"
+		}						
 	]
 }

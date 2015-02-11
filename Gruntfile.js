@@ -157,7 +157,7 @@ module.exports = function (grunt) {
       dist: {
         options: {
           pretty: true,
-          data: grunt.file.readJSON('projects-skills.json')
+          data: grunt.file.readJSON('portfolio.json')
         },
         files: [{
           expand: true,

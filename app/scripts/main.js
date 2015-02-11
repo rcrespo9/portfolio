@@ -59,8 +59,11 @@ app.navigation = (function() {
 	return {
 		settings: {
 			navButton: $('.navbar-toggle, .nav-link, .dark-overlay'),
+			navLink: $('.nav-link'),
 			navOverlay: $('.overlay, .dark-overlay'),
-			theBody: $('body')
+			theBody: $('body'),
+			activeClass: 'active-overlay',
+			noScroll: 'no-scroll'
 		},
 
 		init: function() {
@@ -70,16 +73,22 @@ app.navigation = (function() {
 
 		navEvents: function() {
 			s.navButton.on('click', function(e) {
-				var speed = 200;
+
+				var animateLinks = function() {
+					s.navLink.each(function() {
+						$(this).addClass('animated fadeInLeft');
+					});
+				};
 
 				e.preventDefault();
 
-				if(s.navOverlay.is(':visible')) {
-					s.navOverlay.velocity('fadeOut', { duration: speed });
-					s.theBody.removeClass('no-scroll');		
+				if(s.navOverlay.hasClass(s.activeClass)) {
+					s.theBody.removeClass(s.noScroll);
+					s.navOverlay.removeClass(s.activeClass);		
 				} else {
-					s.navOverlay.velocity('fadeIn', { duration: speed });
-					s.theBody.addClass('no-scroll');
+					s.theBody.addClass(s.noScroll);
+					s.navOverlay.addClass(s.activeClass);
+					animateLinks();	
 				}
 
 			});
