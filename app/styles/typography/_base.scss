@@ -39,17 +39,26 @@ strong {
 }
 
 // typography classes
-.intro-text, .section-header {
+.intro-header {
 	text-align: left;
+
+	span {
+		display: block;
+	}
+}
+
+.intro-text {
+	@include type-weight(regular);
+	@extend h2;
 }
 
 .section-header {
 	margin-bottom: rem(32);
 	@include type-weight(bold);
-}
-
-.intro-text {
-	@include type-weight(regular);
+	
+	&:not(#intro-greeting) {
+		text-align: center;
+	}
 }
 
 .section-subtitle, .section-copy {
