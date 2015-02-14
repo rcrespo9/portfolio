@@ -38,7 +38,11 @@ strong {
 	@include type-weight(medium);
 }
 
-// typography classes
+/*------------------------------------*\
+    #Typography Classes
+\*------------------------------------*/
+
+// introduction typography
 .intro-header, 
 .section-header {
 	text-align: left;
@@ -57,13 +61,15 @@ strong {
 	@include type-weight(regular);
 }
 
+// section typography
 .section-header {
 	margin-bottom: rem(32);
 	@include type-weight(bold);
 }
 
-.section-subtitle, .section-copy {
-	margin-bottom: rem(20);
+.section-subtitle, 
+.section-copy {
+	margin-bottom: rem(22);
 }
 
 .section-subtitle {

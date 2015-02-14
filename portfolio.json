@@ -36,50 +36,42 @@
 		{
 			"id": 1,
 			"name": "HTML5",
-			"svg": "html5-icon.svg",
-			"png": "html5-icon.png"
+			"image": "html5-icon.svg"
 		},
 		{
 			"id": 2,
 			"name": "CSS3",
-			"svg": "css3-icon.svg",
-			"png": "css3-icon.png"
+			"image": "css3-icon.svg"
 		},
 		{
 			"id": 3,
 			"name": "Javascript",
-			"svg": "javascript-icon.svg",
-			"png": "javascript-icon.png"
+			"image": "javascript-icon.svg"
 		},
 		{
 			"id": 4,
 			"name": "jQuery",
-			"svg": "jquery-icon.svg",
-			"png": "jquery-icon.png"
+			"image": "jquery-icon.svg"
 		},
 		{
 			"id": 5,
 			"name": "Ruby",
-			"svg": "ruby-icon.svg",
-			"png": "ruby-icon.png"
+			"image": "ruby-icon.svg"
 		},
 		{
 			"id": 6,
 			"name": "Ruby on Rails",
-			"svg": "rails-icon.svg",
-			"png": "rails-icon.png"
+			"image": "rails-icon.svg"
 		},
 		{
 			"id": 7,
 			"name": "SQL",
-			"svg": "sql-icon.svg",
-			"png": "sql-icon.png"
+			"image": "sql-icon.svg"
 		},
 		{
 			"id": 8,
 			"name": "MongoDB",
-			"svg": "mongo-icon.svg",
-			"png": "mongo-icon.png"
+			"image": "mongo-icon.svg"
 		}														
 	],
 
