@@ -5,7 +5,7 @@
 // colors
 $white: #fff;
 
-$darkGray: #333;
+$dark-gray: #333;
 
 $clouds: #ecf0f1;
 
@@ -15,30 +15,30 @@ $alizarin: #e74c3c;
 
 $pomegranate: #c0392b;
 
-$belizeHole: #2980b9;
+$belize-hole: #2980b9;
 
-$wetAsphalt: #34495e;
-$transWetAsphalt: rgba(52,73,94,.95);
+$wet-asphalt: #34495e;
+$trans-wet-asphalt: rgba(52,73,94,.95);
 
-$greenSea: #16a085;
+$green-sea: #16a085;
 
-$sunFlower: #f1c40f;
+$sun-flower: #f1c40f;
 
 $lynch: #6C7A89;
 
 $transparent: transparent;
-$transparentBlack: rgba(0,0,0,0.4);
+$transparent-black: rgba(0,0,0,0.4);
 
 /*------------------------------------*\
     #Bootstrap Overrides
 \*------------------------------------*/
 
 // text
-$text-color: $darkGray;
+$text-color: $dark-gray;
 
 // fonts
 $font-family-sans-serif: 'brandon-grotesque', Helvetica, Arial, sans-serif;
-// $font-family-serif: 'minion-pro', Georgia, Times, serif;
+$font-family-serif: 'New Century Schoolbook W01', Georgia, Times, serif;
 
 $font-family-base: $font-family-sans-serif;
 
@@ -52,11 +52,11 @@ $navbar-margin-bottom: 0;
 $navbar-default-bg: $white;
 $navbar-default-border: none;
 
-$grid-float-breakpoint:     -9999px;
+$grid-float-breakpoint: -9999px;
 
 // // navbar brand label
 $navbar-default-brand-color: $text-color;
-$navbar-default-brand-hover-color: $greenSea;
+$navbar-default-brand-hover-color: $green-sea;
 
 // // navbar toggle
 $navbar-default-toggle-hover-bg: $transparent;

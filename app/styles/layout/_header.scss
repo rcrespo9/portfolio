@@ -2,6 +2,11 @@
     #Header Styles
 \*------------------------------------*/
 
+// navbar
+.navbar {
+	border: none;
+}
+
 // nav logo and hamburger
 .icon-bar, .navbar-brand {
 	@include transition(all .2s ease-in-out);	
@@ -22,7 +27,7 @@
 
 	&:hover {
 		.icon-bar {
-			background-color: $greenSea;
+			background-color: $green-sea;
 		}
 	}
 
@@ -63,7 +68,7 @@
 }
 
 .dark-overlay {
-	background: $transparentBlack;
+	background: $transparent-black;
 	left: 0;
 	width: 100%;
 	z-index: 1090;
@@ -133,7 +138,7 @@
 	@include transition(all .2s ease-in-out);
 
 	&:hover, &:focus {
-		color: $greenSea;
+		color: $green-sea;
 		text-decoration: none;
 	}
 	

@@ -18,20 +18,7 @@ html.no-js
     script.
       try{Typekit.load();}catch(e){}
 
-    script(type="text/javascript", src="http://fast.fonts.net/jsapi/e6ad7c98-f9d9-4e48-a3bb-75d419b30238.js")
-
-    script.
-      WebFontConfig = { fontdeck: { id: '53552' } };
-      (function() {
-      var wf = document.createElement('script');
-      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-      wf.type = 'text/javascript';
-      wf.async = 'true';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(wf, s);
-      })();
-
+    script(src="http://fast.fonts.net/jsapi/e6ad7c98-f9d9-4e48-a3bb-75d419b30238.js")  
 
     // Place favicon.ico and apple-touch-icon.png in the root directory
     // build:css(.) styles/vendor.css
@@ -39,6 +26,7 @@ html.no-js
     link(rel='stylesheet', href='bower_components/slick.js/slick/slick.css')
     // endbower
     // endbuild
+    link(rel="stylesheet", type="text/css", href="//cloud.typography.com/7875132/664286/css/fonts.css")
     // build:css(.tmp) styles/main.css
     link(rel='stylesheet', href='styles/main.css')
     // endbuild
