@@ -27,7 +27,7 @@ $sun-flower: #f1c40f;
 $lynch: #6C7A89;
 
 $transparent: transparent;
-$transparent-black: rgba(0,0,0,0.4);
+$transparent-black: rgba(#000, 0.4);
 
 /*------------------------------------*\
     #Bootstrap Overrides
@@ -62,3 +62,31 @@ $navbar-default-brand-hover-color: $green-sea;
 $navbar-default-toggle-hover-bg: $transparent;
 $navbar-default-toggle-icon-bar-bg: $navbar-default-brand-color;
 $navbar-default-toggle-border-color: $transparent;
+
+// buttons
+
+$btn-default-color:  $white;
+$btn-default-bg:  $transparent;
+$btn-default-border: $btn-default-color;
+
+// $btn-primary-color:              #fff !default;
+// $btn-primary-bg:                 $brand-primary !default;
+// $btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+
+// $btn-success-color:              #fff !default;
+// $btn-success-bg:                 $brand-success !default;
+// $btn-success-border:             darken($btn-success-bg, 5%) !default;
+
+// $btn-info-color:                 #fff !default;
+// $btn-info-bg:                    $brand-info !default;
+// $btn-info-border:                darken($btn-info-bg, 5%) !default;
+
+// $btn-warning-color:              #fff !default;
+// $btn-warning-bg:                 $brand-warning !default;
+// $btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+
+// $btn-danger-color:               #fff !default;
+// $btn-danger-bg:                  $brand-danger !default;
+// $btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+
+// $btn-link-disabled-color:        $gray-light !default;

@@ -121,10 +121,23 @@ app.greeting = (function() {
 	};
 }());
 
+app.svgFallBack = (function() {
+	return {
+		init: function() {
+			this.replaceImage();
+		},
+
+		replaceImage: function() {
+			svgeezy.init(false, 'png');
+		}
+	};
+}());
+
 // initalize everything
 $(function() {
 	app.anchorScroll.init();
 	app.projectsCarousel.init();
 	app.navigation.init();
-	app.greeting.init();	
+	app.greeting.init();
+	app.svgFallBack.init();	
 });
