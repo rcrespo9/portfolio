@@ -4,19 +4,19 @@ section.white-bg#work
 			.col-sm-12
 				h1.section-header Selected Work.
 
-		//- .row
-		//- 	.projects-carousel
-		//- 		each project in projects
-		//- 			.projects-slide(id="#{project.id}")
-		//- 				.col-md-5
-		//- 					figure.project-image
-		//- 						img.img-responsive(src='../images/' + project.image)
+		.row
+			.projects-carousel
+				each project in projects
+					.projects-slide(id="#{project.id}")
+						.col-md-5
+							figure.project-image
+								img.img-responsive(src='../images/' + project.image, alt='#{project.name}')
 
-		//- 				.col-md-6.col-md-offset-1
-		//- 					article.project-details
-		//- 						h2.project-name.all-lowercase= project.name + '.'
+						//- .col-md-6.col-md-offset-1
+						//- 	article.project-details
+						//- 		h2.project-name.all-lowercase= project.name + '.'
 
 
-		//- 						p.project-desc= project.description
+						//- 		p.project-desc= project.description
 								
-		//- 						a.project-link(href="#{project.link}") Visit Website					
+						//- 		a.project-link(href="#{project.link}") Visit Website					

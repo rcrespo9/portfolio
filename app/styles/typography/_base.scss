@@ -43,8 +43,7 @@ strong {
 \*------------------------------------*/
 
 // introduction typography
-.intro-header, 
-.section-header {
+.intro-header {
 	text-align: left;
 }
 
@@ -63,8 +62,12 @@ strong {
 
 // section typography
 .section-header {
-	margin-bottom: rem(32);
+	margin-bottom: rem(42);
 	@include type-weight(bold);
+
+	&:not(.intro-copy) {
+		text-align: center;
+	}
 }
 
 .section-subtitle, 

@@ -1,14 +1,14 @@
 {
 	"projects":[
 		{
-			"id": 1,
-			"name": "The Mirror Paradox",
-			"role": "Front end developer and web designer",
-			"description": "The Mirror Paradox reflects a user's willingness to put a price tag on their future.",
+			"id": 3,
+			"name": "Proton Playground",
+			"role": "Full stack developer",
+			"description": "Proton Playground has made the periodic table of the chemical elements fun again. Simply click on a chemical element, watch its protons come to life, and play with them.",
 			"professional": false,
 			"art_director": null,
-			"link": "http://themirrorparadox.com",
-			"image": "mirror-paradox.png"
+			"link": "http://proton-playground.herokuapp.com",
+			"image": "proton-playground.png"
 		},
 		{
 			"id": 2,
@@ -19,17 +19,17 @@
 			"art_director": null,
 			"link": "http://live-discourse.herokuapp.com",
 			"image": "live-discourse.png"
-		},			
+		},				
 		{
-			"id": 3,
-			"name": "Proton Playground",
-			"role": "Full stack developer",
-			"description": "Proton Playground has made the periodic table of the chemical elements fun again. Simply click on a chemical element, watch its protons come to life, and play with them.",
+			"id": 1,
+			"name": "The Mirror Paradox",
+			"role": "Front end developer and web designer",
+			"description": "The Mirror Paradox reflects a user's willingness to put a price tag on their future.",
 			"professional": false,
 			"art_director": null,
-			"link": "http://proton-playground.herokuapp.com",
-			"image": "proton-playground.png"
-		}
+			"link": "http://themirrorparadox.com",
+			"image": "the-mirror-paradox.png"
+		}		
 	],
 
 	"skills": [
