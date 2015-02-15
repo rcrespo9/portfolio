@@ -8,12 +8,14 @@
 @import "compass-mixins/lib/_compass.scss";
 @import "bourbon/dist/_bourbon.scss";
 @import "animate.css-scss/animate.scss";
+@import "slick.js/slick/slick.scss";
 // endbower
 
 // components
 @import 'components/colors';
 @import 'components/animations';
 @import 'components/buttons';
+@import 'components/slider';
 
 // typography
 @import 'typography/config';

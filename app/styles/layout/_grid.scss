@@ -2,7 +2,15 @@
     #Grid Styles
 \*------------------------------------*/
 
+// section styles
 section {
-	padding: rem(80) 0;
 	overflow: hidden;
+}
+
+.intro-section {
+	padding: rem(90) 0 rem(80) 0;
+}
+
+.content-section {
+	padding: rem(90) 0 rem(110) 0;
 }

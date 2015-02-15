@@ -1,11 +1,23 @@
 {
-	"projects":[
+	"projects": [
+		{
+			"id": 4,
+			"name": "The 601 West Companies",
+			"role": "Full stack developer",
+			"description": "Portfolio website for 601w Companies.",
+			"professional": true,
+			"client": "The 601 West Companies",
+			"art_director": "Josh White",
+			"link": "http://www.601wcompanies.com",
+			"image": "601w-companies.png"
+		},	
 		{
 			"id": 3,
 			"name": "Proton Playground",
 			"role": "Full stack developer",
 			"description": "Proton Playground has made the periodic table of the chemical elements fun again. Simply click on a chemical element, watch its protons come to life, and play with them.",
 			"professional": false,
+			"client": null,
 			"art_director": null,
 			"link": "http://proton-playground.herokuapp.com",
 			"image": "proton-playground.png"
@@ -16,6 +28,7 @@
 			"role": "Full stack developer",
 			"description": "Live Discourse is a real-time chat application that promotes live, ongoing debate and conversation with readers all over the world. It is connected to a discussion meter which allows users to gauge the allure of an article based on the amount of messages exchanged.",
 			"professional": false,
+			"client": null,
 			"art_director": null,
 			"link": "http://live-discourse.herokuapp.com",
 			"image": "live-discourse.png"
@@ -26,6 +39,7 @@
 			"role": "Front end developer and web designer",
 			"description": "The Mirror Paradox reflects a user's willingness to put a price tag on their future.",
 			"professional": false,
+			"client": null,
 			"art_director": null,
 			"link": "http://themirrorparadox.com",
 			"image": "the-mirror-paradox.png"
@@ -34,42 +48,34 @@
 
 	"skills": [
 		{
-			"id": 1,
 			"name": "HTML5",
 			"image": "html5-icon.svg"
 		},
 		{
-			"id": 2,
 			"name": "CSS3",
 			"image": "css3-icon.svg"
 		},
 		{
-			"id": 3,
 			"name": "Javascript",
 			"image": "javascript-icon.svg"
 		},
 		{
-			"id": 4,
 			"name": "jQuery",
 			"image": "jquery-icon.svg"
 		},
 		{
-			"id": 5,
 			"name": "Ruby",
 			"image": "ruby-icon.svg"
 		},
 		{
-			"id": 6,
 			"name": "Ruby on Rails",
 			"image": "rails-icon.svg"
 		},
 		{
-			"id": 7,
 			"name": "SQL",
 			"image": "sql-icon.svg"
 		},
 		{
-			"id": 8,
 			"name": "MongoDB",
 			"image": "mongo-icon.svg"
 		}														
@@ -77,25 +83,21 @@
 
 	"menuItems": [
 		{
-			"id": 1,
 			"name": "Hello",
 			"link": "#intro"
 		},
 
 		{
-			"id": 2,
 			"name": "Work",
 			"link": "#work"
 		},
 
 		{
-			"id": 3,
 			"name": "Profile",
 			"link": "#about"
 		},
 
 		{
-			"id": 4,
 			"name": "Contact",
 			"link": "#contact"
 		}						

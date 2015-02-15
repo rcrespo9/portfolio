@@ -7,6 +7,10 @@
 }
 
 // work typography
+.project-name {
+	@extend h3;
+}
+
 .project-desc {
-	margin: 15px 0;
+	margin: rem(15) 0;
 }

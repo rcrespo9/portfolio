@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    #Slider Styles
+\*------------------------------------*/
+
+.slick-dots {
+	bottom: -70px;
+	margin-bottom: 0;
+
+    li {
+        position: relative;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        margin: 0 10px;
+        padding: 0;
+        cursor: pointer;
+
+	    button {
+	        border: 2px solid $astro-blue;
+	        border-radius: 50%;
+	        background: $transparent;
+	        display: block;
+	        height: 20px;
+	        width: 20px;
+	        outline: none;
+	        line-height: 0;
+	        font-size: 0;
+	        color: transparent;
+	        padding: 5px;
+	        cursor: pointer;
+
+	        &:hover, &:focus {
+	            outline: none;
+	            background: $astro-blue;
+	        }
+	    }    	
+
+	    &.slick-active button {
+	        background: $astro-blue;
+	    }        
+    }    	
+	
+}

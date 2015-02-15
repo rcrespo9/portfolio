@@ -1,4 +1,4 @@
-section.white-bg#work
+section.content-section.white-bg#work
 	.container
 		.row
 			.col-sm-12
@@ -7,16 +7,15 @@ section.white-bg#work
 		.row
 			.projects-carousel
 				each project in projects
-					.projects-slide(id="#{project.id}")
+					.projects-slide
 						.col-md-5
 							figure.project-image
-								img.img-responsive(src='../images/' + project.image, alt='#{project.name}')
+								img.img-responsive(src='../images/#{project.image}', alt='#{project.name}')
 
-						//- .col-md-6.col-md-offset-1
-						//- 	article.project-details
-						//- 		h2.project-name.all-lowercase= project.name + '.'
+						.col-md-6.col-md-offset-1
+							article.project-details
+								h2.project-name= project.name + '.'
 
-
-						//- 		p.project-desc= project.description
+								p.project-desc= project.description
 								
-						//- 		a.project-link(href="#{project.link}") Visit Website					
+								a.project-link(href="#{project.link}", target="_blank") Visit Website

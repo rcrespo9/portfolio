@@ -2,3 +2,17 @@
     #Intro Styles
 \*------------------------------------*/
 
+// introduction typography
+.intro-header {
+	text-align: left;
+}
+
+.intro-copy {
+	display: block;
+}
+
+.intro-lead {
+	margin: rem(30) 0 rem(40) 0;
+	@extend h2;
+	@include type-weight(regular);
+}

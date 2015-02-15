@@ -6,6 +6,7 @@ h1, h2, h3, h4, h5 {
 	margin-top: 0;
 	margin-bottom: 0;
 	@include transition(all .2s ease-in-out);
+	@include type-weight(bold);
 }
 
 h1 {
@@ -42,32 +43,10 @@ strong {
     #Typography Classes
 \*------------------------------------*/
 
-// introduction typography
-.intro-header {
-	text-align: left;
-}
-
-.intro-header {
-	margin-bottom: rem(42);
-}
-
-.intro-copy {
-	display: block;
-}
-
-.intro-lead {
-	@extend h2;
-	@include type-weight(regular);
-}
-
 // section typography
 .section-header {
-	margin-bottom: rem(42);
-	@include type-weight(bold);
-
-	&:not(.intro-copy) {
-		text-align: center;
-	}
+	margin-bottom: rem(63);
+	text-align: center;
 }
 
 .section-subtitle, 
